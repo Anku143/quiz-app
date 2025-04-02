@@ -1,11 +1,12 @@
 import './App.css'
+import Quiz from './components/quiz'
 
 function App() {
 
   return (
     <>
       <div className="">
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+        <Quiz />
       </div>
     </>
   )

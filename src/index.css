@@ -1,1 +1,18 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #717171;
+    font-family: 'Raleway', sans-serif;
+}
+
+.selected{
+    background-color: rgba(0, 255, 255, 0.451);
+    color: white;
+}
+
+.disable{
+    background-color: #f0f0f0;
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
