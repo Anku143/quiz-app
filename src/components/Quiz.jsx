@@ -14,9 +14,13 @@ const Quiz = () => {
 
     const [questionsList, setQuestionsList] = useState(0)
     const [currentAnswer, setCurrentAnswer] = useState(null)
+    const [score,setScore] = useState(0)
 
     const handleClick = (option)=>{
         setCurrentAnswer(option)
+        if(option === question[questionsList].answer ){
+            setScore(score + 1 )
+        }
     }
 
     const handleNext=()=>{
@@ -33,7 +37,7 @@ const Quiz = () => {
                 
 
         </div>
-   : '' }
+   : <div>Your Score is {score} out of {question.length}</div> }
         </>
     )
 }
